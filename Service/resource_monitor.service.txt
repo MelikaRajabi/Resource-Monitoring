@@ -1,0 +1,8 @@
+﻿[Unit]
+Description=Resource Monitoring Service
+
+[Service]
+ExecStart=/usr/bin/resource_monitor.sh 100 resource_monitor.log 
+
+[Install]
+WantedBy=multi-user.target
